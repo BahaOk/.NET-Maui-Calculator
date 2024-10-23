@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.RegisterScreen"
+             Title="RegisterScreen"
+             Background="LightGray"
+             >
+    <VerticalStackLayout>
+        <Label 
+            Text="Kayıt Ol"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"/>
+
+         <Frame CornerRadius="10" BorderColor="Black"  Padding="3">
+        <Entry Placeholder="Kullanıcı Adi"  Background="White"/>
+</Frame>
+         <Frame CornerRadius="10" BorderColor="Black" Padding="3">
+        <Entry Placeholder="Email" BackgroundColor="White" />
+    </Frame>
+     <Frame CornerRadius="10" BorderColor="Black"  Padding="3">
+        <Entry Placeholder="Parola"  Background="White"/>
+</Frame>
+
+        <HorizontalStackLayout>
+            <CheckBox/>
+            <Label Padding="6">Sözleşmeyi okudum,onaylıyorum</Label>
+        </HorizontalStackLayout>
+        <Button
+            Clicked="Kayit_Olundu"    
+            Text="Kayit Ol"
+            WidthRequest ="100"
+            Style = "{StaticResource Buttons}"
+            />
+
+    </VerticalStackLayout>
+</ContentPage>
